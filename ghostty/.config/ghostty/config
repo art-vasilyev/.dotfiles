@@ -1,0 +1,11 @@
+macos-titlebar-proxy-icon = hidden
+title = " "
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+window-height = 45
+window-width = 160
+theme = catppuccin-mocha.conf
+font-size = 15
+keybind = cmd+t=unbind
+
