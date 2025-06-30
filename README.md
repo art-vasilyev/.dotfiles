@@ -23,13 +23,31 @@ brew bundle --file=~/Brewfile
 
 # zsh
 
-Install  oh-my-zsh: https://ohmyz.sh/#install
+Clone oh-my-zsh:
+```bash
+git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+```
+
+Clone zsh-autosuggestions plugin:
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+Set zsh as the default shell:
+```bash
+chsh -s $(which zsh)
+```
 
 # tmux
 
-Install plugin manager:
+Clone plugin manager:
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+Run tmux and install plugins:
+```
+<prefix>+I
 ```
 
 # karabiner

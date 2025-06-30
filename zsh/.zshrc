@@ -1,8 +1,11 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-plugins=(git)
+plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+
+# accept suggestions by ctrl-y like in neovim
+bindkey '^y' autosuggest-accept
 
 # store secrets separately
 if [ -f ~/.config/zsh/.envrc ]; then
@@ -41,6 +44,9 @@ alias bat="bat --style plain"
 
 # ---- starship prompt ----
 eval "$(starship init zsh)"
+
+# zsh-autosuggestions
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # config overrides
 
