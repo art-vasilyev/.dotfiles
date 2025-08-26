@@ -4,8 +4,9 @@ plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
-# accept suggestions by ctrl-y like in neovim
+# accept/clear suggestions by ctrl-y/e like in neovim
 bindkey '^y' autosuggest-accept
+bindkey '^e' autosuggest-clear
 
 # store secrets separately
 if [ -f ~/.config/zsh/.envrc ]; then
