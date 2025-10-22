@@ -13,7 +13,7 @@ git clone https://github.com/art-vasilyev/.dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 
 # symlink configs with stow
-stow brew ghostty zsh tmux nvim karabiner
+stow brew ghostty fish tmux nvim karabiner
 
 # install packages
 brew bundle --file=~/Brewfile
@@ -21,21 +21,16 @@ brew bundle --file=~/Brewfile
 
 ## Extra steps
 
-# zsh
+# fish
 
-Clone oh-my-zsh:
+Install fzf.fish plugin:
 ```bash
-git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+fisher install PatrickF1/fzf.fish
 ```
 
-Clone zsh-autosuggestions plugin:
+Set fish as the default shell:
 ```bash
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
-
-Set zsh as the default shell:
-```bash
-chsh -s $(which zsh)
+chsh -s $(which fish)
 ```
 
 # tmux
