@@ -11,6 +11,7 @@ return {
 
             null_ls.setup({
                 null_ls.builtins.diagnostics.yamllint,
+                null_ls.builtins.diagnostics.terraform_validate,
             })
         end
     },
