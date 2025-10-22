@@ -10,7 +10,7 @@ return {
         local defaults = {
             formatters = {
                 lua = { "stylua" },
-                python = { "isort", "yapf" },
+                python = { "isort", "black" },
                 json = { "prettier" },
                 yaml = { "prettier" },
                 markdown = { "prettier" },
