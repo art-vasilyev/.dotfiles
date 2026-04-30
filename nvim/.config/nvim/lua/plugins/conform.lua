@@ -7,7 +7,8 @@ return {
             yaml = { "prettier" },
             markdown = { "prettier" },
             lua = { "stylua" },
-            python = { "isort", "black" },
+            python = { "ruff_format", "isort" },
+            sql = { "sql_formatter" },
         },
     },
 

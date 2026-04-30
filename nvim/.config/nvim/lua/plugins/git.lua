@@ -11,6 +11,7 @@ return {
             vim.keymap.set('n', '<leader>hr', ':Gitsigns reset_hunk<CR>', {})
             vim.keymap.set('n', '<leader>hp', ':Gitsigns preview_hunk<CR>', {})
             vim.keymap.set('n', '<leader>hs', ':Gitsigns stage_hunk<CR>', {})
+            vim.keymap.set('n', '<leader>gl', ':Gitsigns toggle_current_line_blame<CR>', {})
 
             vim.keymap.set('v', '<leader>hs', function()
                 require("gitsigns").stage_hunk(
