@@ -23,7 +23,7 @@ return {
                 }
             },
             window = {
-                position = "float",
+                position = "current",
                 mappings = {
                     ["<c-x>"] = "open_split",
                     ["<c-v>"] = "open_vsplit",
