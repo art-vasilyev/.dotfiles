@@ -21,6 +21,7 @@ return {
             vim.lsp.enable({'pyright', 'lua_ls', 'gopls'})
 
             vim.keymap.set("n", "gd", vim.lsp.buf.definition)
+            vim.keymap.set("n", "<leader>dd", vim.diagnostic.open_float)
 
             vim.diagnostic.config({
                 virtual_text = {
